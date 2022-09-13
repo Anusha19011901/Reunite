@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Input Details</title>
+    <h1 style="text-align: center; color: rgb(202, 200, 200);font-size: 300%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Missing Person Register</h1>
+    <p style="color: white;font-family: Arial, Helvetica, sans-serif;text-align: center; "> Please fill in the details in the form below. Upload fingerprint in png/jpg/jpeg format. Click submit after filling.</p>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*body { background:rgb(30,30,40); } */
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.asterisk_input::after {
+content:" *"; 
+color: #e32;
+position: absolute; 
+margin: 0px 0px 0px -20px; 
+font-size: xx-large; 
+padding: 0 5px 0 0; }
+
+</style>
+
+</head>
+<body background="blu.jpeg">
+    <form>     
+        <span class="asterisk_input">  </span> 
+        <input name="name" type="text" class="feedback-input" placeholder="Name of registree"  />   
+        <span class="asterisk_input">  </span>
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <span class="asterisk_input">  </span>
+        <input name="lost" type="text" class="feedback-input" placeholder="Name of lost person" />   
+        <span class="asterisk_input">  </span>
+        <input name="age" type="text" class="feedback-input" placeholder="Age" />   
+        <input name="idmark" type="text" class="feedback-input" placeholder="Identification mark(if any)" />  
+        <span class="asterisk_input">  </span> 
+        <input name="number" type="text" class="feedback-input" placeholder="Contact Number" />  
+        <br>
+        <span class="asterisk_input">  </span> 
+        <p style="color: white; font-family: Arial, Helvetica, sans-serif;">ID Type</p> 
+        <select name="idproof" id="idproof" style="background-color:#CC6666 ;color: rgb(0, 0, 0);">
+            <option value="passport">Passport</option>
+            <option value="aadhar">Aadhar</option>
+            <option value="pan">Pan Card</option>
+            <option value="student">Student ID</option>
+          </select>
+          <br>
+          <br>
+        <input name="id" type="text" class="feedback-input" placeholder="ID proof number" />  
+
+        <br>
+        <span class="asterisk_input">  </span> 
+        <br>
+        <label for="avatar" style="color:white ; font-family: Arial, Helvetica, sans-serif;">Upload fingerprint:</label>
+
+        <input type="file"
+               id="finger" name="finger"
+               accept="image/png, image/jpeg">
+        <br>
+        <br>
+        <textarea name="text" class="feedback-input" placeholder="Comments(where was the person last seen/facial features etc.)"></textarea>
+        <input type="submit" value="SUBMIT"/>
+      </form>
+</body>
+</html>
