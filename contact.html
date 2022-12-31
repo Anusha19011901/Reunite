@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Input Details</title>
+
+
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Reunite &trade;</label>
+        <ul>
+            <li><a href="home.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="input.html"><i class="fa fa-file"></i><span>Lost?</span></a></li>
+            <li><a href="found.html"><i class="fa fa-book"></i> <span>Be Found</span></a></li>
+            <li><a href="contact2.html"><i class="fa fa-handshake"></i><span>Contact us</span></a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+    <h
+        style=" text-align:center;color:rgb(255, 255, 255) ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:400%;">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&ensp;Contact Us</h>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+        /*body { background:rgb(30,30,40); } */
+        form {
+            max-width: 420px;
+            margin: 50px auto;
+        }
+
+        .feedback-input {
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: transparent;
+            border: 2px solid #668bcc;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+        .feedback-input:focus {
+            border: 2px solid #6ee4ff;
+        }
+
+        textarea {
+            height: 150px;
+            line-height: 150%;
+            resize: vertical;
+        }
+
+        [type="submit"] {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            width: 100%;
+            background: #006fc4;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: all 0.3s;
+            margin-top: -4px;
+            font-weight: 700;
+        }
+
+        [type="submit"]:hover {
+            background: #6ee4ff;
+        }
+
+        .asterisk_input::after {
+            content: " *";
+            color: #e32;
+            position: absolute;
+            margin: 0px 0px 0px -20px;
+            font-size: xx-large;
+            padding: 0 5px 0 0;
+        }
+    </style>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body background="fingg1.jpg" style="background-size:120%; background-repeat:no-repeat">
+
+
+
+
+
+
+
+    <form>
+        <span class="asterisk_input"> </span>
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <span class="asterisk_input"> </span>
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+
+        <br>
+        <br>
+        <textarea name="text" class="feedback-input" placeholder="Comments"></textarea>
+        <input type="submit" value="SUBMIT" />
+    </form>
+</body>
+
+</html>
